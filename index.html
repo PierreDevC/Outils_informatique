@@ -3,7 +3,153 @@
 <head>
 <meta charset="utf-8">
 <title>Github Outils Informatiques</title>
-	<link rel="stylesheet" href="styles/styles.css">
+	<style>
+	
+@charset "utf-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  }
+body {
+  background: #fff;
+}
+header {
+  position: fixed;
+  width: 100%;
+  height: 90px;
+  background: #000000;
+}
+#nav{
+  position: absolute;
+  height: 100vh;
+  width: 40%;
+  left: -40%;
+  top: 0;
+  background: #EFEFEF;
+  transition: .7s;
+}
+#nav ul{
+  padding-top: 80px;
+}
+#nav ul li{
+  list-style-type: none;
+  font-size: 20px;
+}
+
+#nav a{
+  display: block;
+  text-decoration: none;
+  color: #000000;
+  margin: 0 15px;
+  padding: 10px;
+  transition: .5s;
+	
+}
+
+
+#nav li a {
+	font:16px Arial, Helvetica;
+}
+
+
+#nav li a:hover{
+  color: #ffffff;
+  background: #C6A348;
+  border-bottom: none;
+  
+  
+}
+#hamburger {
+  display: block;
+  position: absolute;
+  top: 20px;
+  left: 30px;
+  width: 50px;
+  height: 44px;
+  cursor: pointer;
+  transition: 1s;
+}
+.inner_line {
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 50px;
+  height: 3px;
+  background-color: #ffffff;
+  transition: 1s;
+  border-radius: 4px;
+}
+#line1 {
+  top: 0;
+}
+#line2 {
+  top: 20px;
+}
+#line3 {
+  bottom: 0px;
+}
+h1, h2 {
+  text-align: center;
+  line-height: 50px;
+  color: #ffffff;
+  font:65px Arial, Helvetica;
+}
+
+.background {
+    width: 100%;
+}
+
+h2 {
+  display: none;
+}
+p {
+  padding-top: 200px;
+  text-align: center;
+}
+.in{
+  transform: translateX(100%);
+}
+.line_1,.line_2,.line_3{
+  background: #000000;
+}
+.line_1 {
+  transform: translateY(20px) rotate(-45deg);
+  top: 0;
+}
+.line_2 {
+  opacity: 0;
+}
+.line_3 {
+  transform: translateY(-20px) rotate(45deg);
+  bottom: 0;
+}
+
+@media screen and (max-width: 480px) {
+  #nav ul li {
+    font-size: 14px;
+  }
+  h1 {
+    display: none;
+  }
+  h2 {
+    display: block;
+    font-size: 14px;
+  }
+}
+
+.element-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+.fonctions {
+    padding: 50px;
+}
+		
+	</style>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" async></script>
 	<script src="https://kit.fontawesome.com/f09d5e5c92.js" crossorigin="anonymous"></script>
 </head>
